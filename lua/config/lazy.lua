@@ -26,7 +26,13 @@ require("lazy").setup({
 	spec = {
 		{ "catppuccin/nvim" },
 		{ "nvim-treesitter/nvim-treesitter" },
-		{ "nvim-telescope/telescope.nvim" },
+		{
+			"nvim-telescope/telescope.nvim",
+			keys = {
+				{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files in filetree" },
+				{ "<leader>fw", "<cmd>Telescope live_grep<cr>", desc="Find word in filetree" }
+			},
+		},
 		{ "nvim-lua/plenary.nvim" }
 	},
 
