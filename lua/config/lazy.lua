@@ -25,6 +25,7 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
 	spec = {
 		{ "catppuccin/nvim" },
+		{ "hrsh7th/nvim-cmp" },
 		{ "nvim-treesitter/nvim-treesitter" },
 		{
 			"nvim-telescope/telescope.nvim",
