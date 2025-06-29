@@ -26,7 +26,12 @@ require("lazy").setup({
 	spec = {
 		{ "catppuccin/nvim" },
 		{ "hrsh7th/nvim-cmp" },
+		{ "akinsho/toggleterm.nvim", config = true },
+		{ "romgrk/barbar.nvim" },
 		{ "nvim-treesitter/nvim-treesitter" },
+		{ "nvim-tree/nvim-web-devicons" },
+		{ "nvim-neo-tree/neo-tree.nvim" },
+		{ "MunifTanjim/nui.nvim" }, -- Dependency for nvim-neo-tree
 		{
 			"nvim-telescope/telescope.nvim",
 			keys = {
