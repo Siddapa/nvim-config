@@ -1,4 +1,7 @@
 require("config.lazy")
+require("toggleterm").setup{
+	inerst_mappings = true
+}
 
 vim.o.termguicolors = true
 vim.cmd.colorscheme "catppuccin"
@@ -22,19 +25,37 @@ vim.keymap.set("n", "<S-k>", "<S-{>",
 	{ desc = "Jump up to next section", noremap = true, silent = true }
 )
 
-vim.keymap.set("n", "<C-n>", "<CMD>Neotree focus reveal<CR>",
+vim.keymap.set("n", "<C-n>", "<CMD>Neotree focus reveal toggle=true<CR>",
 	{ desc = "Open Neo Tree", noremap = true, silent = true }
 )
 
-vim.keymap.set("n", "<M-v>", "<CMD>ToggleTerm size=40 direction=vertical<CR>", 
+vim.keymap.set("n", "<M-h>", "<CMD>ToggleTerm size=40 direction=vertical<CR>", 
 	{ desc = "Open Vertical Terminal", noremap = true, silent = true }
 )
-
-vim.keymap.set("n", "<M-v>", "<CMD>ToggleTerm size=40 direction=horizontal<CR>", 
+vim.keymap.set("n", "<M-v>", "<CMD>ToggleTerm size=10 direction=horizontal<CR>", 
 	{ desc = "Open Horizontal Terminal", noremap = true, silent = true }
 )
+vim.keymap.set("t", "<M-h>", "<CMD>ToggleTerm<CR>", 
+	{ desc = "Close all open terminals", noremap = true, silent = true }
+)
+vim.keymap.set("t", "<M-v>", "<CMD>ToggleTerm<CR>", 
+	{ desc = "Close all open terminals", noremap = true, silent = true }
+)
 
--- Doesn't work, probably being overrid by somehting else
+vim.keymap.set("n", "<C-h>", "<C-w>h", 
+	{ desc = "Focus left", noremap = true, silent = true }
+)
+vim.keymap.set("n", "<C-j>", "<C-w>j",
+	{ desc = "Focus down", noremap = true, silent = true }
+)
+vim.keymap.set("n", "<C-k>", "<C-w>k", 
+	{ desc = "Focus up", noremap = true, silent = true }
+)
+vim.keymap.set("n", "<C-l>", "<C-w>l", 
+	{ desc = "Focus right", noremap = true, silent = true }
+)
+
+-- Doesn't work, probably being overrid by something else
 vim.keymap.set("n", "<S-Tab>", "<CMD>BufferPrevious<CR>",
 	{ desc = "Slide over to previous buffer", noremap = false, silent = true }
 )
