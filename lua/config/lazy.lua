@@ -30,7 +30,16 @@ require("lazy").setup({
 		{ "romgrk/barbar.nvim" },
 		{ "nvim-treesitter/nvim-treesitter" },
 		{ "nvim-tree/nvim-web-devicons" },
-		{ "nvim-neo-tree/neo-tree.nvim" },
+		{ 
+			"nvim-neo-tree/neo-tree.nvim",
+			opts = {
+				filesystem = {
+					filtered_items = {
+						visible = true,
+					}
+				}
+			}
+		},
 		{ "MunifTanjim/nui.nvim" }, -- Dependency for nvim-neo-tree
 		{
 			"nvim-telescope/telescope.nvim",
