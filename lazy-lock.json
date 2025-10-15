@@ -1,9 +1,9 @@
 {
   "barbar.nvim": { "branch": "master", "commit": "549ee11d97057eae207bafa2c23c315942cca097" },
-  "lazy.nvim": { "branch": "main", "commit": "59334064f8604ca073791c25dcc5c9698865406e" },
-  "neo-tree.nvim": { "branch": "main", "commit": "9130e58424ad95bf2dd8b40afbb8cf04d648638c" },
+  "lazy.nvim": { "branch": "main", "commit": "1ea3c4085785f460fb0e46d2fe1ee895f5f9e7c1" },
+  "neo-tree.nvim": { "branch": "main", "commit": "20244beec28b9d79ffb75fe1b1606f4dd8d476fc" },
   "nui.nvim": { "branch": "main", "commit": "de740991c12411b663994b2860f1a4fd0937c130" },
-  "nvim": { "branch": "main", "commit": "c89184526212e04feffbddda9d06b041a8fca416" },
+  "nvim": { "branch": "main", "commit": "af58927c55c9f3272c940ff02b3cee94a1249f26" },
   "nvim-cmp": { "branch": "main", "commit": "b5311ab3ed9c846b585c0c15b7559be131ec4be9" },
   "nvim-treesitter": { "branch": "master", "commit": "42fc28ba918343ebfd5565147a42a26580579482" },
   "nvim-web-devicons": { "branch": "master", "commit": "b8221e42cf7287c4dcde81f232f58d7b947c210d" },

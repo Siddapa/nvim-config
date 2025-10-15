@@ -29,16 +29,16 @@ vim.keymap.set("n", "<C-n>", "<CMD>Neotree focus reveal toggle=true<CR>",
 	{ desc = "Open Neo Tree", noremap = true, silent = true }
 )
 
-vim.keymap.set("n", "<M-h>", "<CMD>ToggleTerm size=40 direction=vertical<CR>", 
+vim.keymap.set("n", "<M-v>", "<CMD>ToggleTerm size=70 direction=vertical<CR>", 
 	{ desc = "Open Vertical Terminal", noremap = true, silent = true }
 )
-vim.keymap.set("n", "<M-v>", "<CMD>ToggleTerm size=10 direction=horizontal<CR>", 
+vim.keymap.set("n", "<M-h>", "<CMD>ToggleTerm size=10 direction=horizontal<CR>", 
 	{ desc = "Open Horizontal Terminal", noremap = true, silent = true }
 )
-vim.keymap.set("t", "<M-h>", "<CMD>ToggleTerm<CR>", 
+vim.keymap.set("t", "<M-v>", "<CMD>ToggleTerm<CR>", 
 	{ desc = "Close all open terminals", noremap = true, silent = true }
 )
-vim.keymap.set("t", "<M-v>", "<CMD>ToggleTerm<CR>", 
+vim.keymap.set("t", "<M-h>", "<CMD>ToggleTerm<CR>", 
 	{ desc = "Close all open terminals", noremap = true, silent = true }
 )
 
