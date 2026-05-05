@@ -48,7 +48,9 @@ require("lazy").setup({
 				{ "<leader>fw", "<cmd>Telescope live_grep<cr>", desc="Find word in filetree" }
 			},
 		},
-		{ "nvim-lua/plenary.nvim" }
+		{ "nvim-lua/plenary.nvim" },
+		{ "OXY2DEV/markview.nvim" },
+		{ "github/copilot.vim" }
 	},
 
 	-- automatically check for plugin updates
