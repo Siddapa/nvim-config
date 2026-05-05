@@ -50,7 +50,20 @@ require("lazy").setup({
 		},
 		{ "nvim-lua/plenary.nvim" },
 		{ "OXY2DEV/markview.nvim" },
-		{ "github/copilot.vim" }
+		{
+			"olimorris/codecompanion.nvim",
+			dependencies = {
+				"nvim-lua/plenary.nvim",
+				"nvim-treesitter/nvim-treesitter",
+			},
+			opts = {
+				interactions = {
+					chat = {
+						adapter = "copilot"
+					}
+				}
+			}
+		}
 	},
 
 	-- automatically check for plugin updates
